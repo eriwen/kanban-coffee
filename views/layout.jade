@@ -1,0 +1,17 @@
+!!! 5
+html
+    head
+        meta(charset='utf-8' )
+        meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+        title Kanban Board
+        link(rel='stylesheet', href='/stylesheets/normalize.css')
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        != body
+        - if (this.development)
+            script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js')
+            script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.js')
+        - else
+            script(src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+            script(src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js')
+        script(src='/javascripts/main.js')
